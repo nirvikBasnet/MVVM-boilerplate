@@ -1,5 +1,6 @@
 package com.example.countries.viewmodel
 
+import android.annotation.SuppressLint
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.countries.model.CountriesService
@@ -23,6 +24,7 @@ class ListViewModel: ViewModel() {
     fun refresh(){
         fetchCountries()
     }
+    @SuppressLint("SuspiciousIndentation")
     private fun fetchCountries(){
      loading.value = true
         disposable.add(
