@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity() {
     private var progressBarLoading : ProgressBar? = null
     private var swipeRefreshLayout : SwipeRefreshLayout? = null
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
